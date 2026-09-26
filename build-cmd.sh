@@ -38,15 +38,18 @@ source "$(dirname "$AUTOBUILD_VARIABLES_FILE")/functions"
 # a release, applied on top of the release tag. Each patch is the upstream commit unchanged
 # (git format-patch). Skipped when already applied, so a re-run is harmless.
 #   0001: CVE-2026-50811, upstream 5a280ecde6f324de0d226261036e736e0cb49a71
-for p in "$top"/patches/*.patch; do
+# (pushd rather than git -C: Git for Windows cannot use the msys /d/... path form.)
+pushd "$top/freetype" > /dev/null
+for p in ../patches/*.patch; do
     [ -f "$p" ] || continue
-    if git -C "$top/freetype" apply --reverse --check "$p" 2>/dev/null; then
+    if git apply --reverse --check "$p" 2>/dev/null; then
         echo "already applied: $(basename "$p")"
     else
-        git -C "$top/freetype" apply "$p"
+        git apply "$p"
         echo "applied: $(basename "$p")"
     fi
 done
+popd > /dev/null
 
 pushd "$FREETYPELIB_SOURCE_DIR"
     case "$AUTOBUILD_PLATFORM" in
