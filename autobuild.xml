@@ -1,19 +1,14 @@
 <?xml version="1.0" ?>
-<llsd><map>
+<llsd>
+<map>
+    <key>version</key>
+    <string>1.3</string>
+    <key>type</key>
+    <string>autobuild</string>
     <key>installables</key>
     <map>
       <key>libpng</key>
       <map>
-        <key>copyright</key>
-        <string>Copyright (c) 2004, 2006-2013 Glenn Randers-Pehrson</string>
-        <key>description</key>
-        <string>PNG Reference library</string>
-        <key>license</key>
-        <string>libpng</string>
-        <key>license_file</key>
-        <string>LICENSES/libpng.txt</string>
-        <key>name</key>
-        <string>libpng</string>
         <key>platforms</key>
         <map>
           <key>darwin64</key>
@@ -21,11 +16,11 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>6fa10d5f44601dda6efc3eda1a9dab22525e7a9a</string>
+              <string>5c056a361c8e85db6a4aff994ecad4d923787ec9</string>
               <key>hash_algorithm</key>
               <string>sha1</string>
               <key>url</key>
-              <string>https://github.com/secondlife/3p-libpng/releases/download/v1.6.53-eea12b7/libpng-1.6.44-dev1.geea12b7-darwin64-20934739343.tar.zst</string>
+              <string>https://github.com/intelligentwolf/3p-libpng/releases/download/v1.6.58-r1/libpng-1.6.58-r1-darwin64-36234731723.tar.zst</string>
             </map>
             <key>name</key>
             <string>darwin64</string>
@@ -35,11 +30,11 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>112b7f46f5923e6418dfa4bc13ebe2db6911c9b9</string>
+              <string>e6aa361369254146d5a1990746c2750fa7c86594</string>
               <key>hash_algorithm</key>
               <string>sha1</string>
               <key>url</key>
-              <string>https://github.com/secondlife/3p-libpng/releases/download/v1.6.53-eea12b7/libpng-1.6.44-dev1.geea12b7-linux64-20934739343.tar.zst</string>
+              <string>https://github.com/intelligentwolf/3p-libpng/releases/download/v1.6.58-r1/libpng-1.6.58-r1-linux64-36234731723.tar.zst</string>
             </map>
             <key>name</key>
             <string>linux64</string>
@@ -49,33 +44,31 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>2731c45f1e62e33b8612b3ee2b9c4cb39dafbfe2</string>
+              <string>87eee2c1a67f62786d61c140cbb8a5ed219c453f</string>
               <key>hash_algorithm</key>
               <string>sha1</string>
               <key>url</key>
-              <string>https://github.com/secondlife/3p-libpng/releases/download/v1.6.53-eea12b7/libpng-1.6.44-dev1.geea12b7-windows64-20934739343.tar.zst</string>
+              <string>https://github.com/intelligentwolf/3p-libpng/releases/download/v1.6.58-r1/libpng-1.6.58-r1-windows64-36234731723.tar.zst</string>
             </map>
             <key>name</key>
             <string>windows64</string>
           </map>
         </map>
+        <key>license</key>
+        <string>libpng</string>
+        <key>license_file</key>
+        <string>LICENSES/libpng.txt</string>
+        <key>copyright</key>
+        <string>Copyright (c) 2004, 2006-2013 Glenn Randers-Pehrson</string>
         <key>version</key>
-        <string>1.6.44-geea12b7</string>
+        <string>1.6.58-r1</string>
+        <key>name</key>
+        <string>libpng</string>
+        <key>description</key>
+        <string>PNG Reference library</string>
       </map>
       <key>zlib-ng</key>
       <map>
-        <key>canonical_repo</key>
-        <string>https://bitbucket.org/lindenlab/3p-zlib-ng</string>
-        <key>copyright</key>
-        <string>Copyright (C) 1995-2013 Jean-loup Gailly and Mark Adler</string>
-        <key>description</key>
-        <string>zlib data compression library for the next generation systems</string>
-        <key>license</key>
-        <string>zlib-ng</string>
-        <key>license_file</key>
-        <string>LICENSES/zlib-ng.txt</string>
-        <key>name</key>
-        <string>zlib-ng</string>
         <key>platforms</key>
         <map>
           <key>darwin64</key>
@@ -121,32 +114,28 @@
             <string>windows64</string>
           </map>
         </map>
+        <key>license</key>
+        <string>zlib-ng</string>
+        <key>license_file</key>
+        <string>LICENSES/zlib-ng.txt</string>
+        <key>copyright</key>
+        <string>Copyright (C) 1995-2013 Jean-loup Gailly and Mark Adler</string>
         <key>version</key>
         <string>2.2.5-dev0.g0d88d03.d20260112</string>
+        <key>name</key>
+        <string>zlib-ng</string>
+        <key>canonical_repo</key>
+        <string>https://bitbucket.org/lindenlab/3p-zlib-ng</string>
+        <key>description</key>
+        <string>zlib data compression library for the next generation systems</string>
       </map>
     </map>
     <key>package_description</key>
     <map>
-      <key>canonical_repo</key>
-      <string>https://github.com/secondlife/3p-freetype</string>
-      <key>copyright</key>
-      <string>Copyright 2006, 2007, 2008, 2009, 2010 by David Turner, Robert Wilhelm, and Werner Lemberg.</string>
-      <key>description</key>
-      <string>Font rendering library</string>
-      <key>license</key>
-      <string>FreeType</string>
-      <key>license_file</key>
-      <string>LICENSES/freetype.txt</string>
-      <key>name</key>
-      <string>freetype</string>
-      <key>use_scm_version</key>
-      <boolean>true</boolean>
       <key>platforms</key>
       <map>
         <key>common</key>
         <map>
-          <key>build_directory</key>
-          <string>stage</string>
           <key>configurations</key>
           <map>
             <key>default</key>
@@ -171,6 +160,8 @@
             <string>LICENSES/freetype.txt</string>
             <string>docs/freetype/README.Linden</string>
           </array>
+          <key>build_directory</key>
+          <string>stage</string>
           <key>name</key>
           <string>common</string>
         </map>
@@ -241,9 +232,20 @@
           <string>windows</string>
         </map>
       </map>
+      <key>license</key>
+      <string>FreeType</string>
+      <key>license_file</key>
+      <string>LICENSES/freetype.txt</string>
+      <key>copyright</key>
+      <string>Copyright 2006, 2007, 2008, 2009, 2010 by David Turner, Robert Wilhelm, and Werner Lemberg.</string>
+      <key>use_scm_version</key>
+      <boolean>true</boolean>
+      <key>name</key>
+      <string>freetype</string>
+      <key>canonical_repo</key>
+      <string>https://github.com/secondlife/3p-freetype</string>
+      <key>description</key>
+      <string>Font rendering library</string>
     </map>
-    <key>type</key>
-    <string>autobuild</string>
-    <key>version</key>
-    <string>1.3</string>
-  </map></llsd>
+  </map>
+</llsd>
